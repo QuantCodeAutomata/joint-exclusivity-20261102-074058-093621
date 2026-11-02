@@ -1,0 +1,202 @@
+{
+  "part_a": {
+    "parameters": {
+      "n": 6,
+      "q": [
+        0.3,
+        0.25,
+        0.2,
+        0.15,
+        0.1,
+        0.1
+      ],
+      "tau": 1.1,
+      "m_values": [
+        2,
+        3,
+        4
+      ],
+      "strongest_admissible_m": 3,
+      "n_samples": 200000
+    },
+    "m_results": {
+      "2": {
+        "m": 2,
+        "exists": false,
+        "tau": 1.1,
+        "bound": 1,
+        "condition": "tau=1.1000 <= m-1=1"
+      },
+      "3": {
+        "m": 3,
+        "exists": true,
+        "tau": 1.1,
+        "bound": 2,
+        "condition": "tau=1.1000 <= m-1=2",
+        "violation_rate": 0.0,
+        "max_count": 2,
+        "m_exclusive_ok": true,
+        "count_distribution": {
+          "1": 0.900795,
+          "2": 0.099205
+        },
+        "kappa_m_sharp": {
+          "kappa_values": [
+            0,
+            2
+          ],
+          "probabilities": [
+            0.44999999999999996,
+            0.55
+          ],
+          "mean": 1.1,
+          "variance": 0.99
+        },
+        "convex_order_bounds": {
+          "k2": {
+            "kappa_star": 1.297615,
+            "alternative": 2.06552,
+            "kappa_upper": 2.19688,
+            "lower_bound_holds": true,
+            "upper_bound_holds": true
+          },
+          "k3": {
+            "kappa_star": 1.694435,
+            "alternative": 4.66179,
+            "kappa_upper": 4.39376,
+            "lower_bound_holds": true,
+            "upper_bound_holds": false
+          },
+          "exp05": {
+            "kappa_star": 1.754827025832602,
+            "alternative": 1.9482143779895165,
+            "kappa_upper": 1.9437147458262767,
+            "lower_bound_holds": true,
+            "upper_bound_holds": false
+          },
+          "exp1": {
+            "kappa_star": 3.181645989961182,
+            "alternative": 5.002181990353742,
+            "kappa_upper": 4.508997390654692,
+            "lower_bound_holds": true,
+            "upper_bound_holds": false
+          },
+          "exp2": {
+            "kappa_star": 12.072434262674307,
+            "alternative": 87.97920124310296,
+            "kappa_upper": 30.437175961203476,
+            "lower_bound_holds": true,
+            "upper_bound_holds": false
+          }
+        },
+        "lower_bound_holds_all": true,
+        "upper_bound_holds_all": false
+      },
+      "4": {
+        "m": 4,
+        "exists": true,
+        "tau": 1.1,
+        "bound": 3,
+        "condition": "tau=1.1000 <= m-1=3",
+        "violation_rate": 0.0,
+        "max_count": 2,
+        "m_exclusive_ok": true,
+        "count_distribution": {
+          "1": 0.900795,
+          "2": 0.099205
+        },
+        "kappa_m_sharp": {
+          "kappa_values": [
+            0,
+            3
+          ],
+          "probabilities": [
+            0.6333333333333333,
+            0.3666666666666667
+          ],
+          "mean": 1.1,
+          "variance": 2.09
+        },
+        "convex_order_bounds": {
+          "k2": {
+            "kappa_star": 1.297615,
+            "alternative": 2.073315,
+            "kappa_upper": 3.29265,
+            "lower_bound_holds": true,
+            "upper_bound_holds": true
+          },
+          "k3": {
+            "kappa_star": 1.694435,
+            "alternative": 4.687715,
+            "kappa_upper": 9.87795,
+            "lower_bound_holds": true,
+            "upper_bound_holds": true
+          },
+          "exp05": {
+            "kappa_star": 1.754827025832602,
+            "alternative": 1.9511595430376838,
+            "kappa_upper": 2.2737759463831813,
+            "lower_bound_holds": true,
+            "upper_bound_holds": true
+          },
+          "exp1": {
+            "kappa_star": 3.181645989961182,
+            "alternative": 5.024382244710714,
+            "kappa_upper": 7.98244368334821,
+            "lower_bound_holds": true,
+            "upper_bound_holds": true
+          },
+          "exp2": {
+            "kappa_star": 12.072434262674307,
+            "alternative": 89.68165144501918,
+            "kappa_upper": 148.22857409931714,
+            "lower_bound_holds": true,
+            "upper_bound_holds": true
+          }
+        },
+        "lower_bound_holds_all": true,
+        "upper_bound_holds_all": true
+      }
+    }
+  },
+  "part_b": {
+    "n": 4,
+    "m": 2,
+    "alpha_levels": [
+      0.8,
+      0.75,
+      0.7,
+      0.85
+    ],
+    "thresholds": [
+      0.841621,
+      0.67449,
+      0.524401,
+      1.036433
+    ],
+    "p_exceed": [
+      0.2,
+      0.25,
+      0.3,
+      0.15
+    ],
+    "tau_exceed": 0.9,
+    "existence_condition_holds": true,
+    "n_samples": 200000,
+    "simulation_time_s": 0.04,
+    "je_verification": {
+      "violation_rate": 0.0,
+      "max_simultaneous_exceedances": 1,
+      "je_property_holds": true,
+      "m": 2
+    },
+    "marginal_errors": [
+      0.00126,
+      0.00195,
+      0.0036,
+      0.001858
+    ],
+    "max_marginal_error": 0.0036,
+    "marginal_ok": true
+  }
+}

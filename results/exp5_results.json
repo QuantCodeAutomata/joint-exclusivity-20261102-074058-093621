@@ -1,0 +1,60 @@
+{
+  "parameters": {
+    "n": 10,
+    "q": 0.15,
+    "rate": 1.0,
+    "tau": 1.5,
+    "alpha": 0.99
+  },
+  "analytical_safest": {
+    "mean": 1.5,
+    "variance": 1.75,
+    "tau": 1.5
+  },
+  "benchmark_table": {
+    "Safest (S*)": {
+      "mean": 1.4955455946906246,
+      "variance": 1.7349611761468267,
+      "tvar": 7.095031430508384
+    },
+    "Independent": {
+      "mean": 1.4960408418918902,
+      "variance": 2.7614185128643283,
+      "tvar": 8.512044388464053
+    },
+    "3-exclusive worst": {
+      "mean": 1.4928706908871678,
+      "variance": 2.233240324877932,
+      "tvar": 7.4153903663187295
+    },
+    "JE worst": {
+      "mean": 1.5027044112849297,
+      "variance": 12.754282403999113,
+      "tvar": 15.897299181597734
+    },
+    "Co-monotonic": {
+      "mean": 1.4847824307272166,
+      "variance": 14.118965471612558,
+      "tvar": 17.009734950422594
+    },
+    "Frechet worst (m=3)": {
+      "mean": 1.4993274271042663,
+      "variance": 3.761740425508712,
+      "tvar": 10.66723009567145
+    }
+  },
+  "stop_loss_at_d0": {
+    "pi_star": 1.5,
+    "expected_mean": 1.5,
+    "pi_3excl_bound": 1.5
+  },
+  "attainability": {
+    "m3": true,
+    "m_je": true
+  },
+  "orderings_verified": {
+    "var_star_le_indep": true,
+    "var_indep_le_comono": true,
+    "tvar_star_le_indep": true
+  }
+}
